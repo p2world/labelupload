@@ -12,7 +12,7 @@ ie8+ label iframe :hover
 var jbtn=$('label').labelUpload({
     action:'/upload',
     dataType:'json',     //  json,text
-    contentType:'html',  //  html,text   (server response contentType)
+    contentType:'html',  //  html,text   (server response contentType text/html,text/plain)
     name:'file',
     onstart:function(){
         jbtn.addClass('loading');
@@ -25,5 +25,5 @@ var jbtn=$('label').labelUpload({
             alert(json.id);
         }
     }
-})
+});
 ```
