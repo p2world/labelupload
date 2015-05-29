@@ -10,10 +10,11 @@ ie8+ label iframe :hover
 
 ```javascript
 var jbtn=$('label').labelUpload({
+    name:'file',         //  field name
     action:'/upload',
+    accept: 'image/*',
     dataType:'json',     //  json,text
     contentType:'html',  //  html,text   (server response contentType text/html,text/plain)
-    name:'file',
     onstart:function(){
         jbtn.addClass('loading');
     },
